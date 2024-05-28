@@ -2,13 +2,16 @@
 This is my News Application project, where I have used the frameworks/libraries like dagger, retrofit.
 
 # Architecture used is MVVM(Model View View Model)
-![MVVMImage](https://github.com/siddhant123-geek/MyNewsApplicationProjectWithJetpackComposeAndDaggerHilt/assets/82453362/439310a1-bc05-4d6f-b6e1-fcf116b81eb2)
+![MVVMImage](https://github.com/siddhant123-geek/AssignmentNewsApp/assets/82453362/6e8b338c-7c6c-43e9-aa2f-997679c22a1b)
 
 # Detailed summary of the screens implemented
 # TopheadlinesScreen
 - Shows a generic list of news from the database which is populated by news fetched from the newsApi.
 - And on clicking on each of the news item, we navigate to a more detailed version of the news on browser.
 - I have also added the functionality of Long Press DPAD-Down which when performed does a fresh news fetch from the server and shows the updated list.
+
+# TopheadlineScreen
+![Screenshot_2024-05-28-22-47-10-50_9b83c5a91e4b1da3d646063e726144ca](https://github.com/siddhant123-geek/AssignmentNewsApp/assets/82453362/8bfdebe3-c6a9-4f5c-8852-958aca03bfaa)
 
 # Dependencies used 
 # Retrofit
