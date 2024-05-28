@@ -1,6 +1,9 @@
 package com.example.livecodingnewsapp.ui.topheadline
 
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
+import android.view.KeyEvent
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -27,6 +30,7 @@ class TopHeadlineActivity : AppCompatActivity() {
     lateinit var adapter: TopHeadlineAdapter
 
     private lateinit var binding: ActivityTopHeadlineBinding
+    private val handler = Handler(Looper.getMainLooper())
 
     override fun onCreate(savedInstanceState: Bundle?) {
         injectDependencies()
@@ -86,4 +90,16 @@ class TopHeadlineActivity : AppCompatActivity() {
             .activityModule(ActivityModule(this)).build().inject(this)
     }
 
+    override fun dispatchKeyEvent(event: KeyEvent): Boolean {
+        when(event.keyCode) {
+            KeyEvent.KEYCODE_DPAD_DOWN -> {
+                if (event.action == KeyEvent.ACTION_DOWN) {
+                    handler.postDelayed({
+                        newsListViewModel.fetchNews()
+                    }, 1000)
+                }
+            }
+        }
+        return super.dispatchKeyEvent(event)
+    }
 }
