@@ -12,6 +12,7 @@ This is my News Application project, where I have used the frameworks/libraries 
 
 # TopheadlineScreen
 ![Screenshot_2024-05-28-22-47-10-50_9b83c5a91e4b1da3d646063e726144ca](https://github.com/siddhant123-geek/AssignmentNewsApp/assets/82453362/8bfdebe3-c6a9-4f5c-8852-958aca03bfaa)
+![NewsAppTv1080](https://github.com/siddhant123-geek/AssignmentNewsApp/assets/82453362/fa5739cc-c232-494e-8432-c50b2e6dbe9f)
 
 # Dependencies used 
 # Retrofit
